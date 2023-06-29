@@ -39,7 +39,6 @@ const postAuth = async (url, body) => {
                 token: result.token
             }
             sendMessage(msg);
-            window.location.href = `/home/${result.token}`;
         }
     }   
   }
