@@ -1,4 +1,4 @@
-const ws = new WebSocket(`wss://d2lgqlnck8vz6t.cloudfront.net/socket`);
+const ws = new WebSocket(`ws://localhost:8081`);
 ws.addEventListener("open", () => {
     console.log("Connected to server");
 });

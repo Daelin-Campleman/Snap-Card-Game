@@ -116,6 +116,7 @@ const auth = require("./middleware/auth");
 
 app.get("/email", auth, (req, res) => {
   let response = { email: req.user.email, valid: true };
+  console.log(response)
   res.status(200).json(response);
 });
 
@@ -126,7 +127,6 @@ app.get("/verify", auth, (req, res) => {
 
 app.get("/user", auth, (req, res) => {
   let response = { email: req.user.email, firstName: req.user.first_name, lastName: req.user.last_name, valid: true, };
-  console.log(response);
   res.status(200).json(response);
 });
 

@@ -1,7 +1,7 @@
 import {config} from '../../config/config.js';
 
 export async function postHistory(game) {
-    const response = await fetch(`${process.env.API_URL}/gameResults`,{
+    const response = await fetch(`http://localhost:8082/gameResults`,{
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -13,7 +13,7 @@ export async function postHistory(game) {
 }
 
 export async function getHistory(token) {
-    const response = await fetch(`${process.env.API_URL}/${token}`,{
+    const response = await fetch(`http://localhost:8082/history/${token}`,{
         method: 'GET',
       })
       
@@ -21,7 +21,7 @@ export async function getHistory(token) {
 }
 
 export async function getInfo(token) {
-  const response = await fetch(`${process.env.API_URL}/${token}`,{
+  const response = await fetch(`http://localhost:8082/info/${token}`,{
       method: 'GET',
     })
     
@@ -29,7 +29,7 @@ export async function getInfo(token) {
 }
 
 export async function sendInfo(token) {
-  const response = await fetch(`${process.env.API_URL}/${token}`,{
+  const response = await fetch(`http://localhost:8082/register/${token}`,{
       method: 'GET',
     })
     
