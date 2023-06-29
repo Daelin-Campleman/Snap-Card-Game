@@ -97,4 +97,5 @@ SERVER_URL= http://localhost:8081 <br/>
 8. Run `npm start` in the "auth-server" directory.
 9. Open browser to [http://localhost:8080/](http://localhost:8080/)
 
+*NOTE: If a fetch error occurs, please run `nvm use node 18` to allow fetch to be used
 <hr>
