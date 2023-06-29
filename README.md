@@ -63,6 +63,7 @@ Add an `.env` file in the `server` folder containing the following: <br/>
 API_URL = http://localhost:8082 <br/> <br/>
 
 Add an `.env` file in the `api` folder containing the following: <br/> 
+*NOTE: The database name in MySQL gets put into lowercase. If copying the names from the scripts file and pasting it in the .env will give an error and not work
 
   HOST: your mysql hostname<br/>
   USER: your mysql username<br/>
@@ -72,6 +73,7 @@ Add an `.env` file in the `api` folder containing the following: <br/>
 
 
 Add an `.env` file in the `auth-server` folder containing the following: <br/>
+*NOTE: The database name in MySQL gets put into lowercase. If copying the names from the scripts file and pasting it in the .env will give an error and not work
 
 HOST: your mysql hostname <br/>
 USER: your mysql username<br/>
