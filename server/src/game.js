@@ -137,7 +137,7 @@ export async function leaveGame(joinCode, playerWS){
             const game = activeGames.get(joinCode);
             if (game.started === true) {
                 console.log("Removing cards");
-                if(game.lobby.get(playerWS).currentHand !== null || game.lobby.get(playerWS).currentHand.length > 0){
+                if(game.lobby.get(playerWS).currentHand !== null && game.lobby.get(playerWS).currentHand.length > 0){
                     const result = await deckAPI.addPile(game.deck_id, game.lobby.get(playerWS).currentHand);
                     activeGames.get(joinCode).lobby.get(playerWS).currentHand = new Array();
                 }
